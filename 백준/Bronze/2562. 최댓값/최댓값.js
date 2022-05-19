@@ -3,7 +3,7 @@ let input = require('fs').readFileSync('/dev/stdin').toString().split('\n').map(
 let max = input[0];
 let maxIdx = 0;
 
-for (let i = 1; i < 9; i++) {
+for (let i = 1; i < input.length; i++) {
   if (max < input[i]) {
     max = input[i];
     maxIdx = i;
