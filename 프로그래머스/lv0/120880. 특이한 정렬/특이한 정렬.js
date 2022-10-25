@@ -10,7 +10,9 @@ function solution(numlist, n) {
         const b_diff = Math.abs(b-n);
         
         // if(a_diff === b_diff) return b_diff - a_diff;
-        if(a_diff === b_diff) return b-a;
+        if(a_diff === b_diff) {
+            return b-a; // 거리가 같을 경우, numlist 전체를 내림차순으로 
+        }
         return a_diff - b_diff;
     })
     return numlist;
