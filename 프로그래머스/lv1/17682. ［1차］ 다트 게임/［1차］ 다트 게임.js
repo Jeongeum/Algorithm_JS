@@ -8,7 +8,7 @@ function solution(dartResult) {
                tmp = 10;
                i++;
            } else {
-               tmp = dartResult[i];
+               tmp = parseInt(dartResult[i]);
            }
         } 
         else if(dartResult[i] === 'S') answer.push(Math.pow(tmp,1)); 
